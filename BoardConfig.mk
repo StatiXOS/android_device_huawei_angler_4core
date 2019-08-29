@@ -57,16 +57,16 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/angler/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/angler_4core/bluetooth
 
 BOARD_USES_SECURE_SERVICES := true
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-TARGET_BOARD_INFO_FILE := device/huawei/angler/board-info.txt
+TARGET_BOARD_INFO_FILE := device/huawei/angler_4core/board-info.txt
 TARGET_NO_RPC := true
 
-BOARD_EGL_CFG := device/huawei/angler/egl.cfg
+BOARD_EGL_CFG := device/huawei/angler_4core/egl.cfg
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -116,14 +116,14 @@ TARGET_USES_MKE2FS := true
 
 TARGET_AUX_OS_VARIANT_LIST := angler
 
-TARGET_RECOVERY_FSTAB = device/huawei/angler/fstab.angler
+TARGET_RECOVERY_FSTAB = device/huawei/angler_4core/fstab.angler
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler
+TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler_4core
 
 BOARD_ROOT_EXTRA_FOLDERS := firmware persist
 
 BOARD_SEPOLICY_DIRS += \
-	device/huawei/angler/sepolicy
+	device/huawei/angler_4core/sepolicy
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -162,10 +162,10 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/angler-setup.sh
 
-TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
+TARGET_FS_CONFIG_GEN += device/huawei/angler_4core/config.fs
 
-DEVICE_MANIFEST_FILE := device/huawei/angler/manifest.xml
-DEVICE_MATRIX_FILE := device/huawei/angler/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/huawei/angler_4core/manifest.xml
+DEVICE_MATRIX_FILE := device/huawei/angler_4core/compatibility_matrix.xml
 
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true

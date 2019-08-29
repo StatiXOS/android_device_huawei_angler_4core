@@ -18,7 +18,7 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Inherit from the common product configuration
-$(call inherit-product, device/huawei/angler/aosp_angler.mk)
+$(call inherit-product, device/huawei/angler_4core/aosp_angler.mk)
 
 # Inherit statix's custom configurations
 $(call inherit-product, $(TOPDIR)vendor/statix/config/common.mk)
@@ -28,8 +28,8 @@ $(call inherit-product, $(TOPDIR)vendor/statix/config/gsm.mk)
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-PRODUCT_NAME := statix_angler
-PRODUCT_DEVICE := angler
+PRODUCT_NAME := statix_angler_4core
+PRODUCT_DEVICE := angler_4core
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
 PRODUCT_MANUFACTURER := Huawei
